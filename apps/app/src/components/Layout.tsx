@@ -36,7 +36,6 @@ import { useNetworks } from '@hooks/useNetworks'
 import { useSelectedPrizePool } from '@hooks/useSelectedPrizePool'
 import { useSettingsModalView } from '@hooks/useSettingsModalView'
 import { useSupportedPrizePools } from '@hooks/useSupportedPrizePools'
-import { MigrationPopup } from './MigrationPopup'
 import { DepositModal } from './Modals/DepositModal'
 import { DrawModal } from './Modals/DrawModal'
 import { WithdrawModal } from './Modals/WithdrawModal'
@@ -196,7 +195,7 @@ export const Layout = (props: LayoutProps) => {
   return (
     <div className='flex flex-col min-h-screen'>
       <Head>
-        <title>{`Cabana App${!!pageTitle ? ` | ${pageTitle}` : ''}`}</title>
+        <title>{`MYEVM Win${!!pageTitle ? ` | ${pageTitle}` : ''}`}</title>
       </Head>
 
       <Navbar
@@ -279,9 +278,6 @@ export const Layout = (props: LayoutProps) => {
       />
 
       <VaultListHandler />
-
-      {/* TODO: remove a while after launch */}
-      <MigrationPopup />
 
       <main
         className={classNames(
