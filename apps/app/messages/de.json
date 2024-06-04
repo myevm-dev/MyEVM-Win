@@ -238,7 +238,7 @@
     "manageVaultLists": "Vault Listen bearbeiten",
     "setCustomRPCs": "Benutzerdefinierte RPCs",
     "getHelp": "Hilfe erhalten",
-    "getHelpWithCabana": "Erhalte Hilfe für die Nutzung von Cabana",
+    "getHelpWithCabana": "Erhalte Hilfe für die Nutzung von Win",
     "vaultListsDescription": "Vault Listen bestimmen, welche Preis Vaults in der App angezeigt werden. Bei Interaktion mit importierten Listen ist Vorsicht geboten.",
     "learnMoreVaultLists": "Erfahre mehr über Vault Listen",
     "urlInput": "https:// oder ipfs:// oder ENS Name",

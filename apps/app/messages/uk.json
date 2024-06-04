@@ -186,7 +186,7 @@
     "viewEcosystem": "Перегляд Екосистеми",
     "manageVaultLists": "Керувати Списками Сховищ",
     "getHelp": "Отримати Допомогу",
-    "getHelpWithCabana": "Отримати Допомогу з Cabana",
+    "getHelpWithCabana": "Отримати Допомогу з Win",
     "vaultListsDescription": "Списки сховищ визначають, які призові сховища відображаються у додатку. Будьте уважні під час взаємодії з імпортованими списками.",
     "learnMoreVaultLists": "Докладніше про списки сховищ",
     "urlInput": "https:// або ipfs:// або ENS ім'я",

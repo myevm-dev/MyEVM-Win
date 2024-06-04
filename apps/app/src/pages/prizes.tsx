@@ -30,9 +30,6 @@ export default function PrizesPage() {
     <Layout className='gap-8'>
       <CheckPrizesBanner />
       <PrizesHeader />
-      <Link href='/vaults' passHref={true}>
-        <Button>{t('depositToWin')}</Button>
-      </Link>
       <PrizePoolDisplay className='mt-8' />
       <PrizePoolWinners className='mt-8' />
     </Layout>

@@ -20,22 +20,22 @@ module.exports = {
       colors: {
         pt: {
           purple: {
-            50: '#F5F0FF',
-            100: '#DECEFF',
-            200: '#C8ADFF',
-            300: '#B18CFF',
-            400: '#9B6AFF',
-            500: '#8050E3',
-            600: '#6538C1',
-            700: '#4C249F',
-            800: '#36147D',
-            900: '#24095B',
-            DEFAULT: '#8050E3'
+            50: '#00FAB2',
+            100: '#00FAB2',
+            200: '#FF00FF',
+            300: '#FF00FF',
+            400: '#38B6FF',
+            500: '#FF00FF',
+            600: '#000',
+            700: '#000',
+            800: '#000',
+            900: '#000',
+            DEFAULT: '#00FAB2'
           },
           teal: {
-            light: '#35F0D0',
-            dark: '#0DC5A5',
-            DEFAULT: '#35F0D0'
+            light: '#38B6FF',
+            dark: '#FF00FF',
+            DEFAULT: '#38B6FF'
           },
           pink: {
             light: '#FA48E8',
@@ -44,10 +44,10 @@ module.exports = {
           },
           bg: {
             purple: {
-              light: '#5D3A97',
-              dark: '#2D0C66',
-              darker: '#21064E',
-              DEFAULT: '#2D0C66'
+              light: '#000',
+              dark: '#000',
+              darker: '#000',
+              DEFAULT: '#000'
             }
           },
           warning: {
@@ -57,16 +57,6 @@ module.exports = {
           },
           gold: '#FFB636',
           transparent: '#F5F0FF1A'
-        }
-      },
-      keyframes: {
-        flip: {
-          '0%': { transform: 'rotateX(0deg)' },
-          '100%': { transform: 'rotateX(180deg)' }
-        },
-        unflip: {
-          '0%': { transform: 'rotateX(180deg)' },
-          '100%': { transform: 'rotateX(360deg)' }
         }
       }
     },

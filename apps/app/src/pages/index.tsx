@@ -29,9 +29,6 @@ export default function HomePage() {
   return (
     <Layout className='gap-8'>
       <HomeHeader />
-      <Link href='/vaults' passHref={true}>
-        <Button>{t('depositToWin')}</Button>
-      </Link>
       <PrizePoolCards />
       <CabanaPoweredBy />
     </Layout>
@@ -50,9 +47,9 @@ const CabanaPoweredBy = (props: { className?: string }) => {
         <Image
           src='/pooltogether-logo.svg'
           alt='PoolTogether Logo'
-          width={183}
-          height={72}
-          className='w-24 h-auto'
+          width={173}
+          height={62}
+          className='w-24 h-12'
         />
       </Link>
     </div>

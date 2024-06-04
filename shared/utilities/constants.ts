@@ -510,8 +510,8 @@ export const TOKEN_DATA_REDIRECTS: {
 export const DOMAINS = {
   app: 'https://app.cabana.fi',
   app_v4: 'https://app.pooltogether.com',
-  landingPage: 'https://cabana.fi',
-  protocolLandingPage: 'https://pooltogether.com',
+  landingPage: 'https://myevm.casa',
+  protocolLandingPage: 'https://myevm.casa',
   docs: 'https://docs.cabana.fi',
   protocolDocs: 'https://docs.pooltogether.com',
   protocolDevDocs: 'https://dev.pooltogether.com',

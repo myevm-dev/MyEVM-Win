@@ -24,7 +24,7 @@
     "apr": "APR",
     "warning": "Warning",
     "getTokenAt": "Get {token} at",
-    "cabanaPoweredBy": "Cabana is powered by",
+    "cabanaPoweredBy": "Win is powered by",
     "new": "New",
     "greatMigration": {
       "joinTitle": "Join the Great <highlight>Pooly</highlight> Migration",
@@ -72,7 +72,7 @@
     }
   },
   "Vaults": {
-    "depositAndWin": "Deposit tokens, <highlight>win prizes</highlight>. Withdraw anytime, <highlight>no loss</highlight>",
+    "depositAndWin": "<highlight>Deposit. </highlight> Win. <highlight> Withdraw Anytime.</highlight>",
     "filter": "Filter",
     "filters": {
       "showAll": "Show All",
@@ -225,7 +225,7 @@
     "failedTx": "Something went wrong....",
     "tryAgain": "Try Again",
     "risksDisclaimer": "PoolTogether is a permissionless protocol. Prize vaults can be deployed by anyone. Make sure you know what you are depositing into. <vaultLink>Learn more about this prize vault.</vaultLink>",
-    "depositDisclaimer": "By clicking \"Confirm Deposit\", you agree to Cabana's <tosLink>Terms of Service</tosLink>. Click <vaultLink>here</vaultLink> to learn more about the vault you're depositing into."
+    "depositDisclaimer": "By clicking \"Confirm Deposit\", you agree to Win's <tosLink>Terms of Service</tosLink>. Click <vaultLink>here</vaultLink> to learn more about the vault you're depositing into."
   },
   "Footer": {
     "titles": {
@@ -253,7 +253,7 @@
     "manageVaultLists": "Manage Vault Lists",
     "setCustomRPCs": "Set Custom RPCs",
     "getHelp": "Get Help",
-    "getHelpWithCabana": "Get Help w/ Using Cabana",
+    "getHelpWithCabana": "Get Help w/ Using Win",
     "vaultListsDescription": "Vault lists determine what prize vaults are displayed throughout the app. Use caution when interacting with imported lists.",
     "learnMoreVaultLists": "Learn more about vault lists",
     "urlInput": "https:// or ipfs:// or ENS name",

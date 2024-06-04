@@ -35,15 +35,15 @@ export const HomeHeader = () => {
 
   return (
     <>
-      <div className='flex flex-col items-center gap-3'>
+      <div className='flex flex-col items-center gap-8'>
         <span
           className={classNames(
-            'w-2/3 flex flex-wrap justify-center text-center text-[1.75rem] font-grotesk font-bold',
-            'md:w-full md:text-4xl lg:text-5xl'
+            'w-2/3 flex flex-wrap justify-center text-center text-[2.5rem] font-grotesk font-bold',
+            'md:w-full md:text-4xl lg:text-6x1'
           )}
         >
           {t.rich('winUpTo', {
-            token: () => <TokenFlipper className='my-auto mx-3' />,
+            token: () => <TokenFlipper className='my-auto mx-4' />,
             amount: () => <TotalPrizeValue />
           })}
         </span>

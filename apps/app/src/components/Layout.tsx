@@ -151,11 +151,6 @@ export const Layout = (props: LayoutProps) => {
           href: LINKS.github,
           icon: <SocialIcon platform='github' className='w-6 h-auto shrink-0' />
         },
-        {
-          content: 'Medium',
-          href: LINKS.medium,
-          icon: <SocialIcon platform='medium' className='w-6 h-auto shrink-0' />
-        }
       ]
     },
     {
