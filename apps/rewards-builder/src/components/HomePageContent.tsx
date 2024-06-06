@@ -1,16 +1,16 @@
-import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
-import { useAccount } from 'wagmi'
-import { usePromotionCreationSteps } from '@hooks/usePromotionCreationSteps'
-import { PurpleButton } from './buttons/PurpleButton'
-import { DeployedPromotionsTable } from './DeployedPromotionsTable'
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import { useAccount } from 'wagmi';
+import { usePromotionCreationSteps } from '@hooks/usePromotionCreationSteps';
+import { PurpleButton } from './buttons/PurpleButton';
+import { DeployedPromotionsTable } from './DeployedPromotionsTable';
 
 export const HomePageContent = () => {
-  const { address } = useAccount()
+  const { address } = useAccount();
 
   // NOTE: This is necessary due to hydration errors otherwise.
-  const [isBrowser, setIsBrowser] = useState(false)
-  useEffect(() => setIsBrowser(true), [])
+  const [isBrowser, setIsBrowser] = useState(false);
+  useEffect(() => setIsBrowser(true), []);
 
   if (isBrowser) {
     return (
@@ -21,7 +21,7 @@ export const HomePageContent = () => {
               <span className='mx-auto text-3xl'>Your Rewards</span>
               <DeployNewPromotionButton className='absolute hidden right-0 lg:block' />
             </div>
-            <DeployedPromotionsTable onlyUser={address} className='mb-6' />
+            <DeployedPromotionsTable onlyUser={address} className='mb-6 black-background' />
             <DeployNewPromotionButton className='mb-6 lg:hidden' />
           </>
         )}
@@ -29,34 +29,34 @@ export const HomePageContent = () => {
           <span className='mx-auto text-3xl'>{!!address ? 'Other' : 'All'} Rewards</span>
           {!address && <DeployNewPromotionButton className='absolute hidden right-0 lg:block' />}
         </div>
-        <DeployedPromotionsTable filterOutUser={address} />
+        <DeployedPromotionsTable filterOutUser={address} className='black-background' />
         {!address && <DeployNewPromotionButton className='lg:hidden' />}
       </div>
-    )
+    );
   }
 
-  return <></>
-}
+  return <></>;
+};
 
 interface DeployNewPromotionButtonProps {
-  className?: string
+  className?: string;
 }
 
 const DeployNewPromotionButton = (props: DeployNewPromotionButtonProps) => {
-  const { className } = props
+  const { className } = props;
 
-  const router = useRouter()
+  const router = useRouter();
 
-  const { setStep } = usePromotionCreationSteps()
+  const { setStep } = usePromotionCreationSteps();
 
   const onClickDeploy = () => {
-    setStep(0)
-    router.replace('/create')
-  }
+    setStep(0);
+    router.replace('/create');
+  };
 
   return (
     <PurpleButton onClick={onClickDeploy} className={className}>
       Deploy New Rewards
     </PurpleButton>
-  )
-}
+  );
+};

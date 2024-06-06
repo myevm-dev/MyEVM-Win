@@ -68,3 +68,8 @@
     font-feature-settings: 'calt' off;
   }
 }
+
+
+.black-background {
+  background-color: black;
+}

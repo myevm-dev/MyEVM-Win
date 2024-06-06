@@ -29,7 +29,7 @@ export const DeployPromotionView = (props: DeployPromotionViewProps) => {
 const WhitelistDisclaimer = () => {
   return (
     <span className='max-w-md text-center text-sm text-pt-teal-dark'>
-      Only whitelisted reward tokens will be displayed on the Cabana app. Check out the list{' '}
+      Only whitelisted reward tokens will be displayed on the Win app. Check out the list{' '}
       <a href={LINKS.rewardTokenWhitelist} target='_blank' className='underline'>
         here
       </a>{' '}
