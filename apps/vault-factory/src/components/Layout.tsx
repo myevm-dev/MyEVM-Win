@@ -1,28 +1,28 @@
-import { ConnectButton } from '@rainbow-me/rainbowkit'
-import { Toaster } from '@shared/ui'
-import { LINKS } from '@shared/utilities'
-import classNames from 'classnames'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import { ReactNode } from 'react'
-import { PoweredByPT } from './PoweredByPT'
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { Toaster } from '@shared/ui';
+import { LINKS } from '@shared/utilities';
+import classNames from 'classnames';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { ReactNode } from 'react';
+import { PoweredByPT } from './PoweredByPT';
 
 interface LayoutProps {
-  children: ReactNode
-  isSidebarActive?: boolean
-  className?: string
+  children: ReactNode;
+  isSidebarActive?: boolean;
+  className?: string;
 }
 
 export const Layout = (props: LayoutProps) => {
-  const { children, isSidebarActive, className } = props
+  const { children, isSidebarActive, className } = props;
 
   // TODO: when wallet is connected, query vault deployment subgraph and update `useDeployedVaults`
 
   return (
     <div className='flex flex-col min-h-screen overflow-x-hidden'>
       <Head>
-        <title>Cabana Factory</title>
+        <title>Win Factory</title>
       </Head>
 
       <SimpleNavbar />
@@ -44,15 +44,15 @@ export const Layout = (props: LayoutProps) => {
 
       <SimpleFooter isSidebarActive={isSidebarActive} />
     </div>
-  )
-}
+  );
+};
 
 interface SimpleNavbarProps {
-  className?: string
+  className?: string;
 }
 
 const SimpleNavbar = (props: SimpleNavbarProps) => {
-  const { className } = props
+  const { className } = props;
 
   return (
     <div
@@ -65,8 +65,8 @@ const SimpleNavbar = (props: SimpleNavbarProps) => {
         <Image
           src='/cabanaLogo.svg'
           alt='Cabana Logo'
-          width={177}
-          height={60}
+          width={15}
+          height={50}
           priority={true}
           className='w-52 h-auto mx-auto md:mx-0'
         />
@@ -77,16 +77,16 @@ const SimpleNavbar = (props: SimpleNavbarProps) => {
         accountStatus='full'
       />
     </div>
-  )
-}
+  );
+};
 
 interface SimpleFooterProps {
-  isSidebarActive?: boolean
-  className?: string
+  isSidebarActive?: boolean;
+  className?: string;
 }
 
 const SimpleFooter = (props: SimpleFooterProps) => {
-  const { isSidebarActive, className } = props
+  const { isSidebarActive, className } = props;
 
   return (
     <footer
@@ -103,20 +103,6 @@ const SimpleFooter = (props: SimpleFooterProps) => {
       >
         <PoweredByPT className='mx-auto' />
       </div>
-      <div className='flex flex-col gap-2 items-center mx-auto'>
-        <span className='inline-block text-center text-sm font-medium'>
-          Made with ❤️ & 🤖 by{' '}
-          <a href='https://g9software.xyz' target='_blank' className='hover:text-pt-teal'>
-            Generation Software
-          </a>
-        </span>
-        <span className='text-xs font-medium text-pt-pink'>
-          By using this app you are agreeing to our{' '}
-          <Link href={LINKS.termsOfService} target='_blank' className='hover:underline'>
-            Terms and Conditions
-          </Link>
-        </span>
-      </div>
     </footer>
-  )
-}
+  );
+};

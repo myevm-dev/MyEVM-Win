@@ -16,10 +16,10 @@ class MyDocument extends Document {
   }
 
   render() {
-    const title = 'Cabana Factory'
-    const description = 'Create and manage your PoolTogether Hyperstructure ERC-4626 vaults.'
+    const title = 'Vault Creator'
+    const description = 'Create and manage your ERC-4626 vaults.'
     const keywords =
-      'pooltogether prize savings win save protocol blockchain vault 4626 ethereum tool factory'
+      ' protocol blockchain vault 4626 ethereum tool factory'
 
     return (
       <Html className='bg-pt-purple-800 text-pt-purple-50 overflow-x-hidden dark'>
@@ -30,12 +30,10 @@ class MyDocument extends Document {
           <meta name='theme-color' content='#21064e' />
           <meta name='description' content={description} />
           <meta name='keywords' content={keywords} />
-          <meta name='author' content='Generation Software' />
 
           <meta property='og:title' content={title} />
           <meta property='og:description' content={description} />
           <meta property='og:site_name' content={title} />
-          <meta property='og:url' content={DOMAINS.vaultFactory} />
           <meta property='og:type' content='website' />
           <meta
             property='og:image'

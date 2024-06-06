@@ -20,7 +20,7 @@ export const HomePageContent = () => {
     return (
       <div className='w-full max-w-[1440px] flex flex-col grow gap-5 items-center justify-center px-4 lg:px-0'>
         <div className='w-full relative flex items-center'>
-          <span className='mx-auto text-3xl'>Your Prize Vaults</span>
+          <span className='mx-auto text-3xl'>Your Win Vaults</span>
           <DeployNewVaultButton className='absolute hidden right-0 lg:block' />
         </div>
         <DeployedVaultsTable />
@@ -61,7 +61,7 @@ const DeployNewVaultButton = (props: DeployNewVaultButtonProps) => {
 
   return (
     <PurpleButton onClick={onClickDeploy} className={className}>
-      Deploy a Prize Vault
+      Deploy a Win Vault
     </PurpleButton>
   )
 }
